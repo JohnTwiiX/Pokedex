@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pokedex</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body onload="loadPokemonBoxes()">
+    <div class="pokedexHeader">
+        <button id="header" onclick="loadPokemonBoxes()" style="cursor: pointer;">Pokedex</button>
+    </div>
+
+    <div id="pokedexBoxes" style="display: none" disabled>
+
+    </div>
+
+    <!-- ################################################################################################################################ POKEMON ######################################################################################## -->
+
+    <div id="pokemonContainer">
+        <div id="pokedex">
+            <img id="pokemonImage">
+        </div>
+        <b id="indexNumber">#000</b>
+        <h1 id="pokemonName">Name</h1>
+        <div id="pokemonType"> </div>
+
+        <div class="pokemonBody">
+            <div>
+                <span id="pokemonHeight">00,0</span> m <br>
+                <span class="font-size-15">Height</span>
+            </div>
+            <div>
+                <span id="pokemonWeight">00,0</span> kg <br>
+                <span class="font-size-15">Weight</span>
+            </div>
+        </div>
+
+        <h2 class="text-center">Base Stats</h2>
+        <!-- in eine Tabelle programmieren -->
+        <table>
+            <tr>
+                <td style="width: 60px;">
+                    HP
+                </td>
+                <td style="width: 300px;">
+                    <div class="progress">
+                        <div id="hpBar"><span id="hpSpan">0</span><span style="margin-right: 8px;">/300</span></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ATK
+                </td>
+                <td>
+                    <div class="progress">
+                        <div id="atkBar"><span id="atkSpan">0</span><span style="margin-right: 8px;">/300</span></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    DEF
+                </td>
+                <td>
+                    <div class="progress">
+                        <div id="defBar"><span id="defSpan">0</span><span style="margin-right: 8px;">/300</span></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    s.-ATK
+                </td>
+                <td>
+                    <div class="progress">
+                        <div id="sAtkBar"><span id="sAtkSpan">0</span><span style="margin-right: 8px;">/300</span></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    s.-DEF
+                </td>
+                <td>
+                    <div class="progress">
+                        <div id="sDefBar"><span id="sDefSpan">0</span><span style="margin-right: 8px;">/300</span></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    SPEED
+                </td>
+                <td>
+                    <div class="progress">
+                        <div id="speedBar"><span id="speedSpan">0</span><span style="margin-right: 8px;">/300</span></div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+</body>
+
+</html>
