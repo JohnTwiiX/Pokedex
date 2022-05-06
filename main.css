@@ -135,13 +135,12 @@ table {
     align-items: center;
     height: 81px;
     background: rgb(213, 59, 71);
-    font-size: 25px;
     padding-left: 32px;
 }
 
 .pokedexHeader button {
     background: transparent;
-    font-size: 20px;
+    font-size: 30px;
     border: none;
     color: white;
 }
